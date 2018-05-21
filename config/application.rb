@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 require File.expand_path('../boot', __FILE__)
+=======
+require_relative 'boot'
+>>>>>>> 701b09802bf9d94db0da57069ae8d87c79c89446
 
 require 'rails/all'
 
@@ -8,6 +12,7 @@ Bundler.require(*Rails.groups)
 
 module SampleApp
   class Application < Rails::Application
+<<<<<<< HEAD
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
@@ -22,5 +27,13 @@ module SampleApp
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+=======
+    # Initialize configuration defaults for originally generated Rails version.
+    config.load_defaults 5.1
+
+    # Settings in config/environments/* take precedence over those specified here.
+    # Application configuration should go into files in config/initializers
+    # -- all .rb files in that directory are automatically loaded.
+>>>>>>> 701b09802bf9d94db0da57069ae8d87c79c89446
   end
 end
